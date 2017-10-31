@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>
-        <i></i>
-
-    </title>
+    <link rel="icon"
+          type="image/ico"
+          href="resources/images/favicon.ico">
+    <title>Colmar Academy</title>
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script src="https://use.fontawesome.com/9235d6e7e2.js"></script>
 </head>
 <body>
+<!--Header-->
 <header>
-    <div>
-        <div id="logo">
-            <img src="" alt="company logo">
+    <div class="content-container flex">
+        <div class="flex">
+            <div id="logo">
+                <img src="resources/images/ic-logo.svg" alt="company logo">
+            </div>
+            <div id="title" class="flex">
+                <span>COLMAR</span>
+                <span>ACADEMY</span>
+            </div>
         </div>
-        <div id="title">
-            <span>COLMAR</span>
-            <span>ACADEMY</span>
-        </div>
+        <nav>
+            <a href="#on-campus">On campus</a>
+            <a href="#online">Online</a>
+            <a href="#for-companies">For companies</a>
+            <a href="#">Sign In</a>
+        </nav>
     </div>
-    <nav>
-        <a href="#on-campus">On campus</a>
-        <a href="#online">Online</a>
-        <a href="#for-companies">For companies</a>
-        <a href="#">Sign In</a>
-    </nav>
 </header>
+<!--Main-->
 <main>
-    <div id="banner">
-        <div>
-            <img src="" alt="">
+    <div class="content-container">
+        <!--Banner-->
+        <div id="banner">
+            <div id="banner-img">
+                <img src="resources/images/banner.jpg" alt="students on a bench outside">
+            </div>
+            <div class="text">
+                <h1>Learn something <br>new everyday</h1>
+                <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</p>
+                <button>Start here</button>
+            </div>
         </div>
-        <div>
-            <h1></h1>
-            <p></p>
-            <button></button>
-        </div>
+        <!--On campus-->
+        <section id="on-campus">
+
+        </section>
+        <!--Online-->
+        <section id="online"></section>
+        <!--For companies-->
+        <section id="for-companies"></section>
     </div>
-    <section id="on-campus"></section>
-    <section id="online"></section>
-    <section id="for-companies"></section>
 </main>
-<footer>
+<!--Footer-->
+<footer class="content-container">
     <div id="copyright">
-        <i></i>
+        <i class="fa fa-copyright"></i>
         <span>2016</span>
         <span>Colmar Academy. All rights reserved</span>
     </div>

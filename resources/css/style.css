@@ -1,0 +1,104 @@
+/*Universal*/
+html {
+    font-size: 18px;
+}
+
+.content-container {
+    padding: 0 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+/*Header*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header div {
+    background-color: white;
+    height: 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    margin-right: 1rem;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+#logo {
+    width: 2rem;
+    overflow: hidden;
+}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#title {
+    align-items: center;
+}
+
+/*Main*/
+main > div {
+    margin-top: 4rem;
+    background-color: lightgrey;
+    height: auto;
+}
+
+/*Banner section*/
+#banner {
+    background-color: inherit;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+#banner-img {
+    width: 60%;
+    overflow: hidden;
+}
+
+#banner-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#banner .text {
+    margin-left: 3rem;
+    line-height: 1.1;
+    padding-right: 1rem;
+}
+
+#banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#banner p {
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+#banner button {
+    background-color: #313131;
+    padding: .5rem 0;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*Footer*/
+footer {
+    border-top: 1px solid gray;
+}
