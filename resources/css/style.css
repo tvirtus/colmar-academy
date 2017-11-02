@@ -49,9 +49,9 @@ header nav a:last-child {
 }
 
 /*Main*/
-main > div {
+main {
     margin-top: 4rem;
-    background-color: lightgrey;
+    background-color: #e7e7e7;
     height: auto;
 }
 
@@ -59,22 +59,21 @@ main > div {
 #banner {
     background-color: inherit;
     padding: 2rem 0;
-    display: flex;
     align-items: center;
 }
 
-#banner-img {
+#banner .img-container {
     width: 60%;
     overflow: hidden;
 }
 
-#banner-img img {
+#banner img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-#banner .text {
+#banner .text-container {
     margin-left: 3rem;
     line-height: 1.1;
     padding-right: 1rem;
@@ -83,22 +82,73 @@ main > div {
 #banner h1 {
     font-size: 3rem;
     font-weight: bold;
+    color: #525454;
+    /*color: #444848;*/
 }
 
 #banner p {
     padding: 1.5rem 0;
     font-size: 1.5rem;
+    color: #696a6a;
+    /*color: #555858;*/
 }
 
 #banner button {
-    background-color: #313131;
+    background-color: #525454;
     padding: .5rem 0;
     width: 100%;
     color: white;
     font-size: 1.5rem;
 }
 
+/*On campus section*/
+#on-campus {
+    background-color: inherit;
+    padding: 2rem 0;
+    align-items: center;
+    display: flex;
+}
+#on-campus .left {
+    flex-direction: column;
+    width: 100%;
+    margin-right: 1.5rem;
+    /*display: block;*/
+}
+
+#on-campus .img-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+#on-campus img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#on-campus .blocks-container {
+    /*flex-direction: column;*/
+    /*align-items: flex-end;*/
+    border-left: 1px solid gray;
+    display: inline-block;
+}
+
+#on-campus .block {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+#on-campus .block .img-container {
+    width: 35%;
+}
+
+#on-campus .block .text-container {
+    padding-left: 1rem;
+}
 /*Footer*/
 footer {
     border-top: 1px solid gray;
 }
+
