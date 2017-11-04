@@ -7,17 +7,18 @@
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="resources/css/reset.css">
     <link rel="stylesheet" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:200,300,500,600|Montserrat:100" rel="stylesheet">
     <script src="https://use.fontawesome.com/9235d6e7e2.js"></script>
 </head>
 <body>
 <!--Header-->
 <header>
-    <div class="content-container flex">
-        <div class="flex">
+    <div class="content-container">
+        <div>
             <div id="logo">
                 <img src="resources/images/ic-logo.svg" alt="company logo">
             </div>
-            <div id="title" class="flex">
+            <div id="title">
                 <span>COLMAR</span>
                 <span>ACADEMY</span>
             </div>
@@ -31,68 +32,74 @@
     </div>
 </header>
 <!--Main-->
-<main class="content-container">
+<main>
     <!--Banner-->
-    <section id="banner" class="flex">
-        <div class="img-container">
-            <img src="resources/images/banner.jpg" alt="students on a bench outside">
+    <section id="banner">
+        <div class="sixty">
+            <div class="img-container">
+                <img src="resources/images/banner.jpg" alt="students on a bench outside">
+            </div>
         </div>
-        <div class="text">
+        <div class="text-container forty">
             <h1>Learn something <br>new everyday</h1>
-            <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</p>
+            <h2>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</h2>
             <button>Start here</button>
         </div>
     </section>
     <!--On campus-->
-    <section id="on-campus" class="flex">
-        <div class="left">
+    <section id="on-campus">
+        <div class="sixty">
             <div class="img-container">
                 <img src="resources/images/information-main.jpg" alt="dude reading a book in the park">
             </div>
             <div class="text-container">
                 <h1>It doesn't hurt to keep practicing</h1>
-                <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque.
+                <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat
+                    neque.
                     Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor
                     consequat, tristique ligula."</p>
-                <p>Emanuel, Sr. Strategist at Hiring.com</p>
+                <span>Emanuel, Sr. Strategist at Hiring.com</span>
             </div>
         </div>
-        <div class="blocks-container">
-            <div class="block">
-                <div class="img-container">
-                    <img src="resources/images/information-orientation.jpg" alt="dude reading a book in the park">
+        <div class="forty">
+            <div class="blocks-container">
+                <div class="block">
+                    <div class="img-container">
+                        <img src="resources/images/information-orientation.jpg"
+                             alt="dude reading a book in the park">
+                    </div>
+                    <div class="text-container">
+                        <h2>Orientation date</h2>
+                        <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                        <p>
+                            <a href="#">Read more</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="text-container">
-                    <h2>Orientation date</h2>
-                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                    <p>
-                        <a href="#">Read more</a>
-                    </p>
+                <div class="block">
+                    <div class="img-container">
+                        <img src="resources/images/information-campus.jpg" alt="students studying in a room">
+                    </div>
+                    <div class="text-container">
+                        <h2>Our campus</h2>
+                        <p>Find which campus is close by you</p>
+                        <p>
+                            <a href="#">Read more</a>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="block">
-                <div class="img-container">
-                    <img src="resources/images/information-campus.jpg" alt="students studying in a room">
-                </div>
-                <div class="text-container">
-                    <h2>Our campus</h2>
-                    <p>Find which campus is close by you</p>
-                    <p>
-                        <a href="#">Read more</a>
-                    </p>
-                </div>
-            </div>
-            <div class="block">
-                <div class="img-container">
-                    <img src="resources/images/information-guest-lecture.jpg"
-                         alt="a gary bearded older man wearing a black beret and round brown glasses">
-                </div>
-                <div class="text-container">
-                    <h2>Our guest lecturer</h2>
-                    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                    <p>
-                        <a href="#">Read more</a>
-                    </p>
+                <div class="block">
+                    <div class="img-container">
+                        <img src="resources/images/information-guest-lecture.jpg"
+                             alt="a gary bearded older man wearing a black beret and round brown glasses">
+                    </div>
+                    <div class="text-container">
+                        <h2>Our guest lecturer</h2>
+                        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                        <p>
+                            <a href="#">Read more</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,114 +112,124 @@
                 <div class="img-container">
                     <img src="resources/images/course-software.jpg" alt="computer with two monitors on a desk">
                 </div>
-                <h2>Software engineering</h2>
-                <h3>Courses</h3>
-                <p>Web Development, Mobile Development, iOT, APIs</p>
+                <div class="text-container">
+                    <h2>Software engineering</h2>
+                    <h3>Courses</h3>
+                    <p>Web Development, Mobile Development, iOT, APIs</p>
+                </div>
             </div>
-        </div>
-        <div class="blocks-container">
             <div class="block">
                 <div class="img-container">
                     <img src="resources/images/course-computer-art.jpg" alt="hand holding a smartphone">
                 </div>
-                <h2>Computer art</h2>
-                <h3>Courses</h3>
-                <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                <div class="text-container">
+                    <h2>Computer art</h2>
+                    <h3>Courses</h3>
+                    <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                </div>
             </div>
-        </div>
-        <div class="blocks-container">
             <div class="block">
                 <div class="img-container">
                     <img src="resources/images/course-design.jpg" alt="human holding an older camera">
                 </div>
-                <h2>Design</h2>
-                <h3>Courses</h3>
-                <p>User Experience Design, User Research, Visual Design</p>
+                <div class="text-container">
+                    <h2>Design</h2>
+                    <h3>Courses</h3>
+                    <p>User Experience Design, User Research, Visual Design</p>
+                </div>
             </div>
-        </div>
-        <div class="blocks-container">
             <div class="block">
                 <div class="img-container">
                     <img src="resources/images/course-data.jpg" alt="laptop displaying reports">
                 </div>
-                <h2>Data</h2>
-                <h3>Courses</h3>
-                <p>Data Science, Big Data, SQL, Data Visualization</p>
+                <div class="text-container">
+                    <h2>Data</h2>
+                    <h3>Courses</h3>
+                    <p>Data Science, Big Data, SQL, Data Visualization</p>
+                </div>
             </div>
-        </div>
-        <div class="blocks-container">
             <div class="block">
                 <div class="img-container">
                     <img src="resources/images/course-business.jpg" alt="chess pieces">
                 </div>
-                <h2>Business</h2>
-                <h3>Courses</h3>
-                <p>Product Development Business Development, Startup</p>
+                <div class="text-container">
+                    <h2>Business</h2>
+                    <h3>Courses</h3>
+                    <p>Product Development Business Development, Startup</p>
+                </div>
             </div>
-        </div>
-        <div class="blocks-container">
             <div class="block">
                 <div class="img-container">
-                    <img src="resources/images/course-marketing.jpg" alt="human interacting with an apple watch">
+                    <img src="resources/images/course-marketing.jpg"
+                         alt="human interacting with an apple watch">
                 </div>
-                <h2></h2>
-                <h3>Courses</h3>
-                <p>Analytics, Content Marketing, Mobile Marketing</p>
+                <div class="text-container">
+                    <h2>Marketing</h2>
+                    <h3>Courses</h3>
+                    <p>Analytics, Content Marketing, Mobile Marketing</p>
+                </div>
             </div>
         </div>
     </section>
     <!--For companies-->
     <section id="for-companies">
-        <div class="top">
+        <div class="section-header">
             <h1>Thesis exibit</h1>
         </div>
-        <div class="left">
-            <div class="img-container">
-                <video width="100%" height="auto" controls src="resources/videos/thesis.mp4"
-                            type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="text-container">
-                <h1>Reimagine urban</h1>
-                <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque.
-                    Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor
-                    consequat, tristique ligula."</p>
-            </div>
-        </div>
-        <div class="blocks-container">
-            <div class="block">
+        <div class="sixty-forty">
+            <div class="sixty">
                 <div class="img-container">
-                    <img src="resources/images/thesis-fisma.jpg" alt="top view of a hand writing on paper that's in front of a desktop">
+                    <video width="100%" height="auto" controls src="resources/videos/thesis.mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <div class="text-container">
-                    <h2>Fisma: Design and Prototype</h2>
-                    <p>Designer showcase of new prototype product</p>
+                    <h2>Reimagine urban</h2>
+                    <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec
+                        consequat
+                        neque.
+                        Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor
+                        consequat, tristique ligula."</p>
                 </div>
             </div>
-            <div class="block">
-                <div class="img-container">
-                    <img src="resources/images/thesis-now-and-then.jpg" alt="sky view of a city highlights with Time Square building centered">
-                </div>
-                <div class="text-container">
-                    <h2>Now and then</h2>
-                    <p>Research study about New York</p>
+            <div class="forty">
+                <div class="blocks-container">
+                    <div class="block">
+                        <div class="img-container">
+                            <img src="resources/images/thesis-fisma.jpg"
+                                 alt="top view of a hand writing on paper that's in front of a desktop">
+                        </div>
+                        <div class="text-container">
+                            <h2>Fisma: Design and Prototype</h2>
+                            <p>Designer showcase of new prototype product</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="img-container">
+                            <img src="resources/images/thesis-now-and-then.jpg"
+                                 alt="sky view of a city highlights with Time Square building centered">
+                        </div>
+                        <div class="text-container">
+                            <h2>Now and then</h2>
+                            <p>Research study about New York</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </main>
 <!--Footer-->
-<footer class="content-container">
-    <div id="copyright">
-        <i class="fa fa-copyright"></i>
-        <span>2016</span>
-        <span>Colmar Academy. All rights reserved</span>
-    </div>
-    <div>
-        <a href="#">Terms</a>
-        <a href="#">Privacy</a>
-    </div>
+<footer>
+        <div id="copyright">
+            <i class="fa fa-copyright"></i>
+            <span>2016</span>
+            <span>Colmar Academy. All rights reserved</span>
+        </div>
+        <div>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+        </div>
 </footer>
 </body>
 </html>

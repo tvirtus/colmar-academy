@@ -1,14 +1,105 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 /*Universal*/
 html {
-    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: hsl(230, 5%, 40%);
 }
 
-.content-container {
-    padding: 0 2rem;
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: hsl(230, 5%, 40%);
 }
 
-.flex {
+/*Text*/
+h1 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: hsl(230, 5%, 28%);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: hsl(230, 5%, 32%);
+}
+
+section {
+    padding: 2rem 1.5rem;
+    display: inline-flex;
+    /*!*debugging start*!*/
+    /*border: 1px solid green;*/
+    /*!*debugging end*!*/
+}
+
+.text-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*!*debugging start*!*/
+    /*border: 1px solid rebeccapurple;*/
+    /*!*debugging end*!*/
+}
+
+/*Image*/
+.img-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Blocks*/
+.sixty {
+    width: 60%;
+    /*!*debugging start*!*/
+    /*border: 2px solid red;*/
+    /*!*debugging end*!*/
+}
+
+.forty {
+    width: 40%;
+    margin-left: 1.5rem;
+    /*!*debugging start*!*/
+    /*border: 2px solid blue;*/
+    /*!*debugging end*!*/
+}
+
+.forty img {
+    padding: 1rem;
+}
+
+.blocks-container {
+    /*debugging start*/
+    /*border-left: 3px solid deeppink;*/
+    /*debugging end*/
+}
+
+.block {
+    display: flex;
+    /*debugging start*/
+    /*border: 2px solid saddlebrown;*/
+    /*debugging end*/
+}
+
+.block .img-container {
+    width: 35%;
+}
+
+.block .text-container {
+    width: 65%;
 }
 
 /*Header*/
@@ -16,11 +107,13 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 10;
 }
 
 header div {
     background-color: white;
     height: 4rem;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -30,125 +123,167 @@ header nav a {
 }
 
 header nav a:last-child {
-    margin-right: 0;
+    margin-right: 1.5rem;
 }
 
 #logo {
-    width: 2rem;
+    margin-left: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    height: auto;
+    width: 2.6rem;
+    /*!*debugging start*!*/
+    /*border: 2px solid darkslategrey;*/
+    /*!*debugging end*!*/
 }
 
-#logo {
-    max-width: 100%;
-    height: auto;
+#logo img {
+    width: 100%;
     display: block;
 }
 
 #title {
-    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#title span:first-child {
+    color: hsl(230, 5%, 35%);
+}
+
+#title span:last-child {
+    color: hsl(230, 5%, 85%);
 }
 
 /*Main*/
 main {
     margin-top: 4rem;
-    background-color: #e7e7e7;
-    height: auto;
 }
 
-/*Banner section*/
 #banner {
-    background-color: inherit;
-    padding: 2rem 0;
-    align-items: center;
-}
-
-#banner .img-container {
-    width: 60%;
-    overflow: hidden;
-}
-
-#banner img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    background-color: hsl(230, 5%, 80%);
 }
 
 #banner .text-container {
-    margin-left: 3rem;
-    line-height: 1.1;
-    padding-right: 1rem;
+    padding-right: 6rem;
+    flex-shrink: 2;
 }
 
-#banner h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #525454;
-    /*color: #444848;*/
-}
-
-#banner p {
+#banner h2 {
     padding: 1.5rem 0;
-    font-size: 1.5rem;
-    color: #696a6a;
-    /*color: #555858;*/
 }
 
 #banner button {
-    background-color: #525454;
-    padding: .5rem 0;
+    background-color: hsl(230, 5%, 28%);
+    border: 1px solid hsl(230, 5%, 28%);
+    padding: .7rem 0;
     width: 100%;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 /*On campus section*/
 #on-campus {
-    background-color: inherit;
+    background-color: hsl(230, 5%, 95%);
+}
+
+#on-campus h1 {
+    font-size: 1.8rem;
     padding: 2rem 0;
-    align-items: center;
-    display: flex;
-}
-#on-campus .left {
-    flex-direction: column;
-    width: 100%;
-    margin-right: 1.5rem;
-    /*display: block;*/
 }
 
-#on-campus .img-container {
-    width: 100%;
-    overflow: hidden;
-}
-
-#on-campus img {
-    max-width: 100%;
-    height: auto;
+#on-campus span {
     display: block;
+    padding: 1.8rem 0;
+    font-size: .9rem;
 }
 
-#on-campus .blocks-container {
-    /*flex-direction: column;*/
-    /*align-items: flex-end;*/
-    border-left: 1px solid gray;
-    display: inline-block;
+#on-campus .block p {
+    margin-top: .5rem;
 }
 
-#on-campus .block {
+#on-campus .block:last-child {
+    background-color: hsl(230, 5%, 80%);
+}
+
+/*Online*/
+#online {
     display: flex;
-    align-items: center;
-    padding: 1rem;
+    flex-direction: column;
+    background-color: hsl(230, 5%, 87%);
 }
 
-
-#on-campus .block .img-container {
-    width: 35%;
+#online h1 {
+    text-align: center;
 }
 
-#on-campus .block .text-container {
-    padding-left: 1rem;
+#online .blocks-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: .5rem;
+    justify-content: center;
+    padding: 0 3.5rem;
 }
+
+#online .block {
+    margin: 2rem;
+    display: block;
+    background-color: white;
+}
+
+#online .block .img-container {
+    width: 100%;
+}
+
+#online .block .text-container {
+    width: 100%;
+    padding: 1.5rem;
+}
+
+#online h3 {
+    margin: .5rem 0;
+}
+
+/*For companies*/
+#for-companies {
+    flex-direction: column;
+    background-color: hsl(230, 5%, 95%);
+}
+
+#for-companies .section-header {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#for-companies .sixty-forty {
+    display: flex;
+}
+
+#for-companies h2 {
+    margin-top: 1.5rem;
+}
+
+#for-companies p {
+    margin-top: .5rem;
+}
+
+#for-companies .block:first-child {
+    background-color: hsl(230, 5%, 80%);
+}
+
 /*Footer*/
 footer {
     border-top: 1px solid gray;
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 3rem 1.5rem;
+    background-color: hsl(230, 5%, 95%);
+}
+
+footer a:first-child {
+    padding-right: 1rem;
 }
 
